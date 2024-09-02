@@ -1,4 +1,4 @@
-use test;
+
 db.users.insertMany(
 [
   {
@@ -82,7 +82,7 @@ db.collection.find({status:"active"})
 db.collection.find({age:{$gt:30}})
 
 // Exercício 3: Selecionar pessoas cujo nome começa com "J"
-db.collection.find({name: { $regex: /^J/ })
+db.collection.find({name: { $regex: /^J/ });
    
 // Exercício 4: Selecionar pessoas ativas com idade maior que 30
 db.collection.find({status:"active",age:{$gt:30}})
